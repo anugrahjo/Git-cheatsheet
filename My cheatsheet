@@ -1,0 +1,26 @@
+#Initializing the git folder
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/anugrahjo/Git-cheatsheet.git
+git push -u origin master
+
+git commit -am #for committing all changes
+git commit 
+
+#Or push an existing repository from the command line
+
+git remote add origin https://github.com/anugrahjo/Git-cheatsheet.git
+git push -u origin master
+
+#Or pull an existing repository from the command line
+git pull -u origin master
+
+#To track all/specific files
+git add file_name1 file_name2 file_name3
+#To track all files in the directory in which terminal is opened
+git add .           
+
+#To see which files are untracked:
+git status -u
