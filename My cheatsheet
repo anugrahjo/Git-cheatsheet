@@ -1,12 +1,18 @@
 #Initializing the git folder
-
 git init
 git add README.md
 git commit -m "first commit"
 git remote add origin https://github.com/anugrahjo/Git-cheatsheet.git
 git push -u origin master
 
-git commit -am #for committing all changes
+#initialize an existing directory as a Git repository
+git init
+
+retrieve an entire repository from a hosted location via URL
+git clone [url]
+
+#for committing all changes
+git commit -am 
 git commit 
 
 #Or push an existing repository from the command line
@@ -20,7 +26,24 @@ git pull -u origin master
 #To track all/specific files
 git add file_name1 file_name2 file_name3
 #To track all files in the directory in which terminal is opened
-git add .           
+git add .     
 
 #To see which files are untracked:
 git status -u
+
+#add a git URL as an alias
+git remote add [alias] [url]
+
+#Transmit local branch commits to the remote repository branch
+git push [alias] [branch]
+
+#Fetch and merge any commits from the tracking remote branch
+git pull
+
+#Delete the file from project and stage the removal for commit
+git rm [file]
+
+
+
+
+
