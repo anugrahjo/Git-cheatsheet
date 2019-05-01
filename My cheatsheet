@@ -43,6 +43,8 @@ git pull
 #Delete the file from project and stage the removal for commit
 git rm [file]
 
+#To view the list of remotes
+git remote -v
 
 
 
